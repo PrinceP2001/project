@@ -1,0 +1,48 @@
+*{
+   padding: 0px;
+   margin: 0px;
+}
+body{
+    height: 100%;
+    width: 100%;
+    background-image: url(./image/20211025-175141.jpeg);
+    background-size: cover;
+}
+.d1{
+    display: flex; 
+    justify-content: center;
+    margin-left: 40%;
+    margin-top: 0px;
+    position: absolute;
+}
+.d2
+{
+    position: relative;
+    margin-top: 15%;
+    margin-left: 48%;
+}
+#pic{
+    border-radius: 50%;
+    height: 180px;
+    margin-top: 33px;
+}
+.d3{
+    color: white;
+    position: relative;
+    z-index: 2;
+    margin-left: 50%;
+    margin-top: 3px;
+}
+.d4{
+    color: white;
+     position: relative;
+     z-index: 2;
+     margin-left: 690px;
+     margin-top: 3px;
+}
+.icons{
+    color: white;
+    position: relative;
+    z-index: 3;
+    margin-left: 51%;
+}
