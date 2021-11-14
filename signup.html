@@ -52,29 +52,34 @@
     </header>
     <div class="register-form-container">
       <div class="register-form">
-          <form action="#" method="post" class="rform">
+          <form action="./login.html" name="signup-form" method="post" class="rform" onsubmit="return validate() && validatePassword() && phonenumber() && password()">
             <h2 class="fhead">SIGN-UP</h2>
             <span id="spname" style="color: #F00"></span>
-              <input type="text" name="username" id="fid" placeholder="Username">
+              <input type="text" name="username" class="fid" id="usr" placeholder="Username">
               <span id="spname" style="color: #F00"></span>
-              <input type="text" name="phone" id="fid" placeholder="Phone No.">
+              <input type="text" name="phone" class="fid" id="phone" placeholder="Phone No.">
+              <!-- <div id="phone_error" class="error hidden">Please enter a valid phone number</div> -->
               <span id="spname" style="color: #F00"></span>
-              <input type="email" name="email" id="fid" placeholder="E-mail id">
+              <input type="text" name="email" class="fid" id="email" placeholder="E-mail id">
               <span id="spname" style="color: #F00"></span>
-              <input type="text" name="password" id="fid" placeholder="Password">
+              <input type="password" name="password" class="fid"  id="pwd" placeholder="Password">
+              <span id="StrengthDisp" class="badge displayBadge">Weak</span>
+              <br>
               <span id="sppass" style="color: #F00"></span>
-              <input type="password" name="repassword" id="fid" placeholder="Re-Type Password">
+              <input type="password" name="repassword" class="fid" id="re-pwd" placeholder="Re-Type Password" onkeyup="return validatePassword()">
+              <span id="mismatch"></span>
               <div class="button-box">
                   <!-- <div class="login-toggle-btn">
                       <input type="checkbox">
                       <label>Remember me</label>
                       <a href="#">Forgot Password?</a>
                   </div> -->
-                  <!-- <button class="default-btn" name="sub" type="submit"><span>Sign-Up</span></button> -->
-                  <a href="./login.html" class="btn btn-primary" id="fbtn">SIGN-UP</a>
+                   <button type="submit" id="sl-btn">SIGN UP</button>
+                  <!-- <a href="./login.html" class="btn btn-primary" id="fbtn">SIGN-UP</a> -->
               </div>
           </form>
       </div>
   </div>
+  <script src="./js/signup.js"></script>
 </body>
 </html>

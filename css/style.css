@@ -1,4 +1,4 @@
-* {
+ * {
     box-sizing: border-box;
     padding: 0px;
     margin: 0px;
@@ -16,7 +16,7 @@ b{
 .fbtn{
   margin-left: 500px;
 }
-#fid{
+.fid{
     background-color: transparent;
     border: 1px solid #ebebeb;
     color: #333;
@@ -77,6 +77,25 @@ span{
     padding: 80px;
     text-align: left;
 }
+
+.error
+{
+  color: red;
+  size: 80%
+}
+.hidden
+{
+  display:none;
+}
+
+
+.displayBadge{
+  margin-top: 1%; 
+  display: none; 
+  text-align :center;
+  width: 120px;
+}
+
 .reg{
     background-color: transparent;
     border: 1px solid #ebebeb;
@@ -498,6 +517,12 @@ main iframe{
   margin-left: 15%;
 }
 
+#sl-btn{
+  padding: 8px;
+  background-color: darkorchid;
+  color :black;
+  border-color: #ffa5d8;
+}
   
   
   

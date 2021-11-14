@@ -52,12 +52,12 @@
 
       <div class="login-form-container">
         <div class="login-register-form">
-            <form action="#" method="post" class="lform">
+            <form action="./index.html" name="login-form" method="post" class="lform" onsubmit="return validate() && password()">
               <h2 class="fhead">LOGIN</h2>
                 <span id="spname" style="color: #F00"></span>
-                <input type="email" name="username" id="fid" placeholder="E-mail id">
+                <input type="text" name="username" class="fid" id="email" placeholder="E-mail">
                 <span id="sppass" style="color: #F00"></span>
-                <input type="password" name="password" id="fid" placeholder="Password">
+                <input type="password" name="password" class="fid" id="pwd" placeholder="Password" onkeyup="return password()">
                   <div class="button-box">
                     <!-- <div class="login-toggle-btn">
                         <input type="checkbox">
@@ -65,7 +65,8 @@
                         <a href="#">Forgot Password?</a>
                     </div> -->
                     <!-- <button class="default-btn" name="sub" type="submit"><span>Login</span></button> -->
-                    <a href="./explore.html" class="btn btn-primary" id="fbtn">LOGIN</a>
+                    <!-- <a href="./explore.html" class="btn btn-primary" id="fbtn">LOGIN</a> -->
+                    <button type="submit" id="sl-btn">LOGIN</button>
                 </div>
                 <br>
                 <div class="sign-link">
@@ -76,5 +77,6 @@
             </form>
         </div>
     </div>
+    <script src="./js/login.js"></script>
 </body>
 </html>
