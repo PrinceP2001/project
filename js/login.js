@@ -5,6 +5,10 @@ function validate(){
     alert("fields cannot be empty");
      return false;
     }
+    if(p.value.length<8){
+        alert("password must have atleast characters");
+        return false;
+    }
     else{
      var regexp = /^([a-zA-Z0-9\.-]+)@([a-zA-Z0-9-]+)\.([a-z]{2,8})(.[a-z]{2,8})?$/
     if(regexp.test(e.value))

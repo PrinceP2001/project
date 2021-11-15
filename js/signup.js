@@ -4,11 +4,13 @@ var u=document.getElementById("usr");
  var repassword=document.getElementById("re-pwd");
  var mis=document.getElementById("mismatch");
  var password = document.getElementById('pwd');
+ 
   function validate(){
       if(u.value==""||p.value==""||email.value==""||password.value==""||repassword.value==""){
           alert("Fields cannot be empty");
           return false;
       }
+     
       else{
         var regexp = /^([a-zA-Z0-9\.-]+)@([a-zA-Z0-9-]+)\.([a-z]{2,8})(.[a-z]{2,8})?$/
         if(regexp.test(email.value))
