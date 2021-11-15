@@ -6,7 +6,7 @@ function validate(){
      return false;
     }
     if(p.value.length<8){
-        alert("password must have atleast characters");
+        alert("password must have atleast 8characters");
         return false;
     }
     else{
