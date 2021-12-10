@@ -52,7 +52,7 @@
 
       <div class="login-form-container">
         <div class="login-register-form">
-            <form action="./index.html" name="login-form" method="post" class="lform" onsubmit="return validate() && password()">
+            <form name="login-form" method="post" class="lform">
               <h2 class="fhead">LOGIN</h2>
                 <span id="spname" style="color: #F00"></span>
                 <input type="text" name="username" class="fid" id="email" placeholder="E-mail">
@@ -66,7 +66,8 @@
                     </div> -->
                     <!-- <button class="default-btn" name="sub" type="submit"><span>Login</span></button> -->
                     <!-- <a href="./explore.html" class="btn btn-primary" id="fbtn">LOGIN</a> -->
-                    <button type="submit" id="sl-btn">LOGIN</button>
+                    <!-- <button type="submit" id="sl-btn">LOGIN</button> -->
+                    <a href="./index.html" id="submit-button" onclick="return validate() && password()">LOGIN</a>
                 </div>
                 <br>
                 <div class="sign-link">
